@@ -1,6 +1,16 @@
-let items = ['Google', 'Facebook','Apple', 'Amazon','Microsoft',  'IBM']
+let items = ['Google', 'Facebook','Apple', 'Amazon','Microsoft',  'IBM',]
 
-//number two
+//number one
+function checkDataType(){
+for(let i of items){
+  console.log(typeof i)
+  return i
+}
+}
+
+checkDataType()
+
+ //number two
 function reverseItems(){
     let copiedItems = items.slice()
     //console.log(copiedItems)
@@ -11,8 +21,22 @@ function reverseItems(){
 reverseItems()
 
 //Number three
+ 
+let numbers = [1,2,3,4,5,6,7,8,9,10]
+function sumOfEven(numbers){
+  let sum = 0;
+  for(let i = 0; i < numbers.length; i +=2){
+    sum += i
+  }
+  console.log(sum)
+  return sum
+}
+sumOfEven(numbers)
 
-
+//number four
+function modifyArray(array){
+  
+}
 
 
 const users = {
