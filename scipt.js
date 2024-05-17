@@ -34,11 +34,20 @@ function sumOfEven(numbers){
 sumOfEven(numbers)
 
 //number four
-function modifyArray(array){
-  
+let arraY = items.slice()
+console.log(arraY)
+function modifyArray(arraY){
+  arraY.splice(4, 1,"Firefox")
+  console.log(arraY)
+
+ if(arraY.length < 5){
+  console.log("item not found")
+
+ }
+return arraY
 }
 
-
+modifyArray(arraY)
 const users = {
     Alex: {
       email: 'alex@alex.com',
@@ -74,4 +83,9 @@ const users = {
   }
 
   //number seven
-  
+ 
+  for(let z in users){
+    if(users[z].points >= 50){
+      console.log("point is up to 50")
+    }
+  }
